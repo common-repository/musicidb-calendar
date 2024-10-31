@@ -1,0 +1,80 @@
+//Responsive
+
+	/* Tablet View */
+	@media only screen and (max-width: 1000px) {
+		.musicidb-settings .megacal-account-details{
+			position: relative;
+		    top: 0;
+		    right: 0;
+		    padding: 10px 15px;
+		    margin: 15px 0;
+		}
+		// .megaCalendarWrap .mega-content .mega-toolbar{
+		// 	padding-top:57px;
+		// 	position:relative;
+		// 	.mega-toolbar-add-event{
+		// 		position:absolute;
+		// 		top:4px;
+		// 	}
+		// 	.mega-toolbar-select-month{				
+		// 	}
+		// 	.mega-toolbar-slider{
+		// 		display:none;
+		// 	}
+		// }
+		// #megacal-manage-events #megacal-calendar-outer #megacal-manage-filters{
+		// 	width:auto;
+		// 	h3{
+		// 		font-size:15px;
+		// 	}
+		// 	.megacal-filter-cat{
+		// 		font-size:13px;
+		// 		line-height:16px;		
+		// 	}
+		// }	
+		.musicidb-settings{
+			.megaFlexSection {
+				display:flex;
+				width: 100%;
+		    	box-sizing: border-box;		
+		    	flex-direction: column;
+				.leftArea{
+					width:100%;
+				}
+				.rightArea{
+					padding:20px;
+					width:100%;
+					img.listExamplesPic{
+						max-width:100%;
+						height:auto;				
+					}
+				}
+			}	
+		}
+	}
+
+	/* Mobile Devices */
+	@media only screen and (max-width: 595px) {
+		
+		// .megaCalendarWrap#megacal-manage-calendar {
+		// 	.mega-content .mega-view .mega-view-body .mega-view-week .mega-view-day .mega-view-day-content .megaEvent{
+		// 		.megaEventText {
+		// 			.megaTitle .megaTitlePara{
+		// 				padding-right:9px;
+		// 			}
+		// 			border-radius: 4px 4px 4px 4px;
+		// 			.megaIcons{    
+		// 				top: 3px;
+   		// 				right: 1px;
+		// 				i{
+		// 					font-size:7px;
+		// 				}
+		// 			}	
+		// 		}
+		// 	}
+		// }		
+	}
+
+	@media only screen and (max-width: 400px) {
+		
+	}

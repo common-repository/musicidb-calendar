@@ -1,0 +1,661 @@
+//Responsive
+
+.musicidb-events-integration{
+	@media only screen and (max-width: 1500px) {
+		.window {
+			width: 85%;
+			//left:6% !important;
+		}
+
+		.modalInner {
+			padding:15px 0 5px;
+		}
+	} //1500px
+
+	/* Smaller Than Most Screens */
+	@media only screen and (max-width: 1150px) {
+		.window {
+			width: 100%;
+			height:100%;
+			border-radius:0;
+			box-sizing:border-box;
+			right: 0 !important;
+			left: 0 !important;
+			top: 0 !important;
+		}
+	} //1150px
+
+	/* Tablet View */
+	@media only screen and (max-width: 1000px) {
+		.viewPosters{
+			ul.eventsList{
+				li.listEvent{
+					width:calc(50% - 10px);
+				}
+			}
+		}
+		.viewListPics{
+			.eventsList.largePics{
+				.listEvent{
+					.eventPosterArea{
+						width:190px;						
+					}
+					.listingBody, .controlbar.moveLeft{
+						margin-left:280px !important;
+					}
+				}
+			}	
+		}	
+		.controlbar li {
+			float: left !important;
+		}
+		
+		.modalHead {
+			background:none !important;
+			margin-bottom:13px;
+		}
+		
+		.eventInfoArea .left, 
+		.eventInfoArea .venueInfoTile, 
+		.eventInfoArea .tilesContainer {
+			width: 100%;
+		}
+
+		.thumbTileHolder {
+			width: 205px;
+			height: 205px;
+			position: relative;
+			margin: 0 auto;
+	    	float: none;
+		}
+
+		.controlButtons {
+			right: 0;
+			position: relative;
+			clear: both;
+			height: 67px;
+		}
+
+		.controlButtons a {
+			padding: 9px 7px 2px 25px;
+			width: inherit;
+		}
+
+		.controlButtons li i {
+			font-size: 13px;
+			left: 5px;	
+			top: 8px;
+		}
+
+		.controlbar li {
+			float: none;
+		}
+
+		.controlBarEvents li {
+			float:left;
+		}
+
+		.controlButtons .current a:before, .controlButtons li:hover a:before {
+			left: 45px;
+		}
+
+		.social-links {
+			position: relative;
+			width: 99%;
+			right: inherit;
+			width: inherit;
+			text-align: center;
+			margin: 0 auto
+		}
+
+		.social-links li {
+			float: none;
+		}
+
+		.greenCta {
+			float: none;
+		}
+
+		.btnBlock .greenCta {
+			float: left;
+		}
+
+		.outerExpander {
+			position: relative;
+		}
+
+		.window {
+			width: 60%;
+			min-width: 60%;
+			left: 15px;
+			top: 20px !important
+		}
+
+		.window .scrollingContent {
+			height: 100%;
+			padding: 10px 5px;
+		}
+
+		.mobileHide {
+			display: none !important;
+		}
+		.mobileShow {
+			display: block;
+		}
+
+		/* Modal Views 1000px */
+			.window {
+				padding: 30px 1% 25px;
+				width:100% !important;
+			    box-sizing:border-box;
+				height: 100% !important;
+				min-height: auto !important;
+				top: 0px !important;
+				right: auto;
+				left: 0 !important;
+				border-radius: 0;
+				top:0 !important;
+				border: none;    	/*overflow: inherit;*/
+			}
+			.eventDetailModal{
+				top:0 !important;
+			}
+			.modalClose {
+				margin-right: 10px;
+			}
+			.modalTab {
+				max-height: inherit;
+				overflow: inherit;
+			}
+			.modalHead img {
+				display:none;
+			}
+			.modalHead .artistInfo {
+				width: 50%;
+			}
+			.modalTitle h2 {
+				padding: 0 !important;
+				font-size: 18px;
+				line-height: 19px;
+				margin: 0;
+			}
+			.modalTitle {
+				font: 14px/16px Arial, sans-serif;
+			}
+			
+			.modalInner {
+				padding: 0 5px 5px !important;
+			}
+			
+	    .cardFloater .thumbTileHolder {
+	        width: 220px;
+	        height: 220px;
+	    }
+
+		.controlbar li {
+	        float: left !important;
+	    }
+	} //1000px
+
+	@media only screen and (max-width: 700px) {
+		.viewPosters{
+			ul.eventsList{
+				li.listEvent{
+					div.eventPosterArea{
+						height:310px;
+						//width:calc(50% - 10px);
+					}
+				}
+			}
+		}
+		.viewListPics{
+			.eventsList.largePics{
+				.listEvent{
+					.eventPosterArea{
+						width:150px;						
+					}
+					.listingBody, .controlbar.moveLeft{
+						margin-left:240px !important;
+					}
+				}
+			}	
+		}	
+		.viewCompact{
+			.rowView {
+				display:flex;
+				.rowColumn{
+					display:inline-block;
+					&.detailsColumn{
+						top:0;
+					}
+				}
+			}			
+		}
+		#artistCardsSlider ul.bjqs-controls.v-centered li a{
+			font-size:22px;
+		}
+
+		#artistCardsSlider ul.bjqs-controls.v-centered li.bjqs-prev a {
+			left:-25px;
+		}
+
+		#artistCardsSlider ul.bjqs-controls.v-centered li.bjqs-next a {
+			right:-15px;
+		}
+
+		.webVideo iframe {
+			width: 100%;
+			min-height: 330px;
+		}		
+		
+		.slider-banner{
+			min-height:auto;
+			.slick-slide{
+				min-height: 390px;
+				.slider-label{
+					display: none;
+				}
+				.detailsCard{
+					width:100%;
+					max-width:100%;
+					height:auto;    
+					top: 250px;    
+					min-height: 140px;
+					.content{
+					   	margin-top: 8px;
+						.slider-date{
+							font-size: 17px;
+							margin-bottom: 2px;
+						}
+						.slider-title{
+							font-size: 28px !important;    
+							max-height: 63px;
+						}
+						.buttonsBlockSection{
+							bottom: 10px;
+							left:4px;
+							a.slider-link{
+								background-size: 110px;	
+								//height: 42px;
+							}
+							a.slider-link, a.view-event{
+								font-size: 12px;   
+							}
+						}
+						.view-event-wrapper{
+							bottom: 16px;
+							left: 134px;
+						}								
+					}
+					.content-wrapper{
+						min-height:auto;
+					}		
+				}
+			}								
+		}		
+		.rightSlideArea{
+			.slider-controllers .btn{
+				height: 38px;
+				width: 38px;
+			}
+		}
+		.eventsList .rowView, .style-viewCompact li{
+			display: block;
+			border-bottom:1px solid #dcdcdc;
+			.buttonsColumn{
+				display: block;				
+				width: 100% !important;
+			}
+			.rowColumn {
+				&.dateColumn{
+					width: 77px !important;
+				}
+				.simpleBtn{
+					width:auto;	
+				}
+				.cardFloater{
+					top:0;
+				}		
+			}	
+		}
+		&.blackBack{
+			.eventsList .rowView{
+				border-bottom: 1px solid #444;
+			}
+		}
+	} //700px
+
+	@media only screen and (max-width: 650px) {
+	    .rowView {
+	    	.rowColumn {
+	    		width: 33% !important;	        	
+	        	&.locationColumn {
+		            display:none;
+		        }
+		        &.buttonsColumn a{
+		            width:95%;
+		            margin-bottom:3px;    
+		            text-align: center;        
+		        }	            
+	        }
+	    }
+	    .viewCompact .rowView .simpleTitle{
+	    	font-size:12px;
+	    }
+	} //650px
+
+	/* Mobile Devices */
+	@media only screen and (max-width: 595px) {
+		
+		/* Mobile Hide 'em */
+			.setTime .helpText, .filtersLabel, 
+			#artistCardsSlider, #showtodaybtn, .footLinks nav, .checkBoxCol, 
+			#mailBoxTable thead th:nth-child(5),
+			#mailBoxTable thead th:nth-child(6),
+			#mailBoxTable thead th:nth-child(7), 
+			.sectionHead #embedCodeBtn, .eventsList .listItem .summaryToggle, .flavorText, 
+		    .artistList .listingImgWrap, 
+			.listArtists .listingImgWrap, 
+			.calendarLegend,
+			.imageLeftWrapper, .gigList .navWithBubbles {
+				display: none;
+			}
+		/* Mobile Fix Images in List */
+			.viewListPics {
+				.eventsList.largePics {							    	
+				    .listEvent {
+					    .eventPosterArea {
+					        display:block !important;
+					        width: 120px !important;
+					        img.eventImg {
+							    // width: 83px!important;
+							}
+							.bandPicBox{
+								width: 50%;
+								height: 40px;
+							}	
+							.oneBand .bandPicBox {
+						    	width: 75px !important;
+						    }
+					    }
+					     .listingBody, .controlbar.moveLeft{
+					    	margin-left:205px !important;					    	
+					    }						   			    	
+					}					
+				}
+			}
+			.viewPosters{
+				ul.eventsList{
+					li.listEvent{
+						div.eventPosterArea{
+							height:250px;
+							//width:calc(50% - 10px);
+						}
+						div.listingBody{
+							padding:0 5px;
+							h3.titleofevent{
+								font-size:17px;
+								line-height:20px;	
+							}
+						}
+						ul.controlbar{
+							flex-wrap: wrap;
+						}
+					}
+					&.largePics{
+						li.listEvent{
+							.eventPosterArea{
+								width:330px;
+								max-height:none;
+								.oneBand .bandPicBox{
+									width:100%;
+								}
+								img{
+									
+								}
+							}
+							.listingBody, .controlbar.moveLeft{
+								margin-left:420px !important;
+							}
+						}
+					}
+				}
+			}
+		/* Featured Events Slider Mobile 595 */	
+			.slider-banner {
+				 .slick-slide{
+				    min-height: 340px;
+				    .detailsCard{
+						top: 200px;
+					}
+				}						
+			}			
+
+		/* Mobile Do other stuff */
+			.musicidb-tabs ul.musicidb-tabNav.eventTabsLinks li a{
+				padding: 10px 8px;					    
+			    font-size: 11px;
+			}
+
+			#artistDetailsPopup #artistCardsSlider {
+				display:block;
+			}
+
+			#artistCardsList {
+				display: block !important;
+			}
+
+			#artistDetailsPopup .artistLeftCol {
+			    float: none;
+			    width: 100%;
+			    margin-right: 0;
+			}
+
+			#artistDetailsPopup .artistRightCol {
+				width: 100%;
+			}
+
+			#artistDetailsPopup #artistSelector li a h3{
+				margin-bottom: 3px;
+			}
+
+			#artistSelector li a .festivalArtistTextArea h3 {
+			    max-height: 35px;
+			}
+
+		 	.controlbar.msgBar li {
+		    	float: left;
+		    	margin: 0 0 5px;
+			}
+
+		 	.controlbar span {
+		 		float:none;
+		 	}
+
+			.padding15 {
+		    	padding: 15px 5px!important;
+			}
+
+			.modalHead,  {
+				width: 98%;
+			}					
+
+			textarea {
+			    padding: 5px 5px;
+			}
+
+			.window .greenBtn {
+				margin-bottom: 20px;
+			}
+
+			.window {
+			    padding: 5px 1% 5px 1% !important;
+			    width:100% !important;    
+			    max-height: 100% !important;
+			    box-sizing:border-box;
+			}
+
+			.textarea {
+		    	width: 93%;
+			}
+
+			.modalClose {
+		    	margin-right: 0px;
+			}
+
+			.modalTab {
+				border:none;
+				border-top: 1px solid #ddd;
+			}
+
+			
+
+			.controlbar>li a.TicketLink {
+			    // padding: 5px 11px 0px!important;
+			    // top:1px;
+			}
+
+			.TicketLink span {
+		    	
+			}
+			.modalTabs {
+				padding:0;
+			}
+			
+			/* Modals */
+				.modalColumns > .column {
+				    width: 98%;
+				}
+
+				.modalTab h4.sectionTitle {
+				    font-size: 13px;
+				}
+
+		    .eventsList .listItem {
+		        padding:5px 0 5px 0;
+		    }
+
+		    .eventsList .listItem {
+		    	h3.titleofevent {
+			        font-size: 17px;
+			        line-height: 18px;
+			        margin: 0 0 6px 0;
+		        }
+		        .subtitleEvent{
+		        	font-size: 17px;
+			        line-height: 18px;
+			        margin: 0 0 6px 0;	
+		        }
+		    }
+		    
+		    .cardFloater {
+		        padding-top: 0 !important;
+		        padding-bottom:0 !important;
+		    }
+
+		    select {
+		        padding: 5px;
+		        width: 100% !important;
+		        margin-top: 0;
+		    }
+		    
+		    .genreData {
+		        position: relative;
+		        top: 12px;
+		        margin-bottom: 10px;     
+		        clear: both;
+		    }
+
+			.cardFloater .thumbTileHolder {
+				bottom: 19px;
+			}
+
+		    .linkTile {
+		        width: 100% !important;
+		    }
+
+		    .eventDescription 
+		    .eventDescription span, 
+		    .eventDescription div, 
+		    .eventDescription p{
+		    	font-size: 14px !important;
+				line-height: 18px !important;
+			}
+			
+			.listEvent h3.date .monthName, 
+			.listEvent h3.date .dayNum, 
+			.listEvent h3.date .yearNum {
+		        font-size: 13px !important;
+		        line-height: 14px !important;
+		        // height: inherit !important;
+		        // width: 50px !important;
+		    }
+		    .listEvent h3.date .yearNum {
+		        font-size:13px !important;
+		    }
+		    .viewListPics .listEvent h3.date .dayNum{
+		        font-size:22px !important;
+		        line-height:33px !important;        
+		        top:-6px !important;
+		    }
+		    .listEvent .controlbar {
+			    text-align: center;					    
+			    float: none !important;
+			    margin: 0 auto;
+			}
+		//Mobile
+	} //595px
+
+	@media only screen and (max-width: 400px) {
+		.webVideo iframe {
+			width: 100%;
+			min-height: 330px;
+			height: inherit;
+		}
+		.fullInfo {
+			display:none;
+		}
+		.viewPosters{
+			ul.eventsList{
+				&.largePics{
+					li.listEvent{
+						div.eventPosterArea{
+							height:150px;
+							//width:calc(50% - 10px);
+						}
+					}
+				}
+			}
+		}
+	} //400px
+
+}
+#musicidb-featured-events.tvScreen, 
+.tvScreen #musicidb-featured-events{
+	@media only screen and (max-width: 700px) {
+		.slider-banner{
+			.slick-slide{
+				min-height:1px;
+			}
+		}
+		.slick-dots{
+	    	display: none !important;
+	    }
+	}
+	@media only screen and (max-width: 595px) {
+		.slider-banner{
+			.slick-slide{
+				min-height:1px;
+			}
+		}
+	}
+}
+
+.infinite-body-outer-wrapper .musicidb-events-integration{
+/* Smaller Than Most Screens */
+	@media only screen and (max-width: 1000px) {
+		.window {
+			top: 77px !important;
+		}
+	}
+}
